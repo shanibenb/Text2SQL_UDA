@@ -6,6 +6,7 @@ Our model is based on:
 1. [Representing Schema Structure with Graph Neural Networks for Text-to-SQL Parsing](https://arxiv.org/abs/1905.06241)
 2. [Unsupervised Data Augmentation](https://arxiv.org/abs/1904.12848)
 
+
 <p align="center">
   <img src="Picture1.png" width="600px" height="250px"/>
 </p>
@@ -20,7 +21,7 @@ To train the model you need to follow the next two parts:
     pip install -r requirements_back_translation.txt
     ```
 3. Download the dataset from the [official Spider dataset website](https://yale-lily.github.io/spider)
-4. Run
+4. From inside the back_translation directory run:
     ```
     python main.py --main_path=dataset/
     ```
@@ -36,11 +37,12 @@ To train the model you need to follow the next two parts:
     ```
     python -c "import nltk; nltk.download('punkt')"
     ```
-5. Edit the config file `train_configs/defaults.jsonnet` to update the location of the dataset:
+5. Edit the config file *train_configs/defaults.jsonnet* to update the location of the dataset:
     ```
     local dataset_path = "dataset/";
     ```
-6. Use the following AllenNLP command to train:
+6. Override the file *trainer.py* in the AllenNLP directory *allennlp/training/trainer.py*. Put our [*trainer.py*](https://github.com/shanibenb/Text2SQL_UDA/blob/master/trainer.py) instead.
+7. From inside the model directory run:
     ```
     allennlp train train_configs/defaults.jsonnet -s experiments/name_of_experiment \
     --include-package dataset_readers.spider \ 
