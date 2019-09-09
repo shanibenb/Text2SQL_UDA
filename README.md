@@ -7,7 +7,7 @@ Our model is based on:
 2. [Unsupervised Data Augmentation](https://arxiv.org/abs/1904.12848)
 
 <p align="center">
-  <img src="Picture.png" width="300px" height="250px"/>
+  <img src="Picture1.png" width="600px" height="250px"/>
 </p>
 
 ## Train
