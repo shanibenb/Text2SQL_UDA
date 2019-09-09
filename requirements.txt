@@ -1,6 +1,0 @@
-torch==1.2.0
-allennlp==0.8.2
-spacy==2.0.18
-dill
-ordered_set
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.0.0/en_core_web_sm-2.0.0.tar.gz
