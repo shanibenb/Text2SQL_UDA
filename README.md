@@ -2,6 +2,7 @@
 <sub><sup>*This project was done by Shani Ben Baruch and Noam Mann as a part of a TAU cs course*</sub></sup>
 
 This project goal is to train a semi-superveised model using [Spider Dataset](https://yale-lily.github.io/spider).
+
 Our model is based on:
 1. [Representing Schema Structure with Graph Neural Networks for Text-to-SQL Parsing](https://arxiv.org/abs/1905.06241)
 2. [Unsupervised Data Augmentation](https://arxiv.org/abs/1904.12848)
